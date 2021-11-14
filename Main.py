@@ -6,11 +6,6 @@ import pydeck as pdk
 import plotly.express as px
 
 
-Header = st.container()
-dataset = st.container()
-Features = st.container()
-modelTraining = st.container()
-
 	
 st.markdown(
       """
