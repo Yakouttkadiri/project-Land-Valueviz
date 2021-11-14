@@ -77,7 +77,7 @@ st.bar_chart(code_commune )
 
 
 df2 = pd.read_csv("full_2020.csv")
-st.(' Click on the 💬 on the right to save the chart')
+st.text(' Click on the 💬 on the right to save the chart')
 code_commune = df['code_commune'].value_counts().head(10)
 st.bar_chart(code_commune )
       
