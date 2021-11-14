@@ -21,7 +21,7 @@ st.markdown(
 
     #Header:
 Image = Image.open('logo.png')
-st.image(Image, caption='', width = 220)
+st.image(Image, width = 220)
 st.text('Land valueviz is an app that permits to visualize land values data and compare them. All in pure Python..')
 	
 	
@@ -72,12 +72,12 @@ if option_2:
 #Bar chart
 st.text(' This is a bar chart showing our data according to each commune')	
 df = pd.read_csv("full_2016.csv")
-code_commune = dfsample['code_commune'].value_counts().head(20)
+code_commune = df['code_commune'].value_counts().head(20)
 st.bar_chart(code_commune )
 
 
 df2 = pd.read_csv("full_2020.csv")
-st.caption(' Click on the 💬 on the right to save the chart')
+st.(' Click on the 💬 on the right to save the chart')
 code_commune = df['code_commune'].value_counts().head(10)
 st.bar_chart(code_commune )
       
