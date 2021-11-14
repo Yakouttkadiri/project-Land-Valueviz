@@ -56,9 +56,6 @@ if st.button("Take me to their website"):
 
 
 
-
-
-
     #Datasets
 
 st.sidebar.write('Select a year to show the data:')
