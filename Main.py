@@ -22,12 +22,12 @@ st.markdown(
     #Header:
 Image = Image.open('logo.png')
 st.image(Image, caption='', width = 220)
-st.caption('Land valueviz is an app that permits to visualize land values data and compare them. All in pure Python..')
+st.text('Land valueviz is an app that permits to visualize land values data and compare them. All in pure Python..')
 	
 	
    #Data Loading dataset:
 st.header('Lets visualize 💫!')
-st.caption('This website is using 2016 and 2020s data')
+st.text('This website is using 2016 and 2020s data')
 st.balloons()
 
 	#Importing Datasets, i choose to work only with 2016 and 2020
