@@ -60,12 +60,12 @@ option_2 = st.sidebar.checkbox('👉 2020 👈')
 if option_1:
 	st.write(df.head(1000))
 	st.write(' 2016 Data here 👆  ')
-	st.caption(' Click on the 💬 on the right to save the chart')
+	st.text(' Click on the 💬 on the right to save the chart')
 
 if option_2:
 	st.write(df2.head(1000))
 	st.write(' 2020 Data here 👆  ')
-	st.caption(' Click on the 💬 on the right to save the chart')
+	st.text(' Click on the 💬 on the right to save the chart')
 
    #modelTraining:
 
