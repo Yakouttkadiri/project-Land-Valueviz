@@ -46,14 +46,10 @@ def load_data2():
 df2 = load_data2()
 
  
-
-
     # This cand lead you to the website from which the datasets are token for additional informations
 st.text(' If you want to learn more you can visit the 🇫🇷 government website  : ')
 if st.button("Take me to their website"):
 	st.write("[🇫🇷 www.data.gouv.fr 🇫🇷 ]( https://www.data.gouv.fr/en/datasets/demandes-de-valeurs-foncieres/)")
-
-
 
 
     #Datasets
