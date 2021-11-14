@@ -19,14 +19,13 @@ st.markdown(
       unsafe_allow_html=True
   )
 
-with Header:
+    #Header:
 	Image = Image.open('logo.png')
 	st.image(Image, caption='', width = 220)
 	st.caption('Land valueviz is an app that permits to visualize land values data and compare them. All in pure Python..')
 	
 	
-#Data Loading
-with dataset:
+    #Data Loading dataset:
 	st.header('Lets visualize 💫!')
 	st.caption('This website is using 2016 and 2020s data')
 	st.balloons()
@@ -78,7 +77,7 @@ with dataset:
 		st.write(' 2020 Data here 👆  ')
 		st.caption(' Click on the 💬 on the right to save the chart')
 
-with modelTraining:
+   #modelTraining:
 
 	#Bar chart
 	st.text(' This is a bar chart showing our data according to each commune')
@@ -100,7 +99,19 @@ with modelTraining:
 	st.title(' ** 2016 VS 2020 **')
 
 
-	#HERE
+	#Commune according to the land value (2016)
+	st.text(' 2016')
+
+	fig = px.scatter(df, x="valeur_fonciere", y="code_commune")
+	fig.show()
+	st.write(fig)
+
+    	#Commune according to the land value (2020)
+	st.text(' 2020')
+
+	fig = px.scatter(df, x="valeur_fonciere", y="code_commune")
+	fig.show()
+	st.write(fig)
 
 
 
