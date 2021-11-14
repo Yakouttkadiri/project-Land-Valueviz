@@ -64,7 +64,6 @@ if st.button("Take me to their website"):
 st.sidebar.write('Select a year to show the data:')
 option_1 = st.sidebar.checkbox('👉 2016 👈')
 option_2 = st.sidebar.checkbox('👉 2020 👈')
-dfsample = df.sample(n=100000)
 if option_1:
 	st.write(df.head(1000))
 	st.write(' 2016 Data here 👆  ')
@@ -80,15 +79,13 @@ if option_2:
 #Bar chart
 st.text(' This is a bar chart showing our data according to each commune')	
 df = pd.read_csv("full_2016.csv")
-dfsample = df.sample(n=100000)
 code_commune = dfsample['code_commune'].value_counts().head(20)
 st.bar_chart(code_commune )
 
 
 df2 = pd.read_csv("full_2020.csv")
 st.caption(' Click on the 💬 on the right to save the chart')
-df2sample = df2.sample(n=100000)
-code_commune = df2sample['code_commune'].value_counts().head(10)
+code_commune = df['code_commune'].value_counts().head(10)
 st.bar_chart(code_commune )
       
 
